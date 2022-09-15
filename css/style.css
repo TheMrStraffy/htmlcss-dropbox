@@ -3,3 +3,159 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* UTILS */
+.clearspace-fixed{
+  content: '';
+  height: 80px;
+}
+ul li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+.d-flex{
+  display: flex;
+}
+.btn{
+  background-color: #0061ff;
+  color: white;
+  display: inline-block;
+}
+/* /UTILS */
+
+/* HEADER */
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  box-shadow: 0px 1px 3px rgba(128, 128, 128, 0.24);
+  background-color: white;
+  z-index: 999;
+}
+
+header .menu{
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 15px;
+}
+
+header .menu .logo, ul li{
+  padding: 0 15px;
+}
+.menu ul li a{
+  color: black;
+}
+.menu-left{
+  align-items: center;
+}
+.menu-right{
+  align-items: center;
+}
+
+/* ul li:hover{
+  border-bottom: 1px solid rgba(169, 169, 169, 0.418);
+  height: 100%;
+} */
+
+.menu-right .btn{
+  padding: 5px 10px;
+  
+}
+.menu-right .btn a{
+  color: white;
+}
+
+/* /HEADER */
+
+/* JUMBOTRON */
+
+.jumbotron{
+  width: 100%;
+  background-color: #b4d0e7;
+  height: 740px;
+  padding-top: 100px;
+  margin-bottom: 160px;
+}
+
+
+h1{
+  font-size: 5.0rem;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 70px;
+  
+}
+.jumbotron .container{
+  width: 60%;
+  margin: 0 auto;
+
+}
+
+.jumbotron .d-flex .jumbo-img{
+  width: 780px;
+  height: 460px;
+}
+
+.jumbotron .container .col-1 p{
+  margin-bottom: 35px;
+}
+.jumbotron .container .col-1 .btn{
+  padding: 15px 10px;
+  margin-bottom: 30px;
+}
+.jumbotron .container .col-1 .btn:nth-child(3){
+  background-color: #b4d0e7;
+  padding: 0;
+  margin-bottom: 70px;
+}
+
+.container .arrow{
+  font-size: 2.5rem;
+}
+
+
+/* /JUMBOTRON */
+
+/* SECTIONS */
+section .container{
+  width: 50%;
+  margin: 0 auto;
+}
+/* Business plans */
+
+section .container .row{
+  justify-content: space-between;
+  align-items: center;
+  
+  
+}
+
+
+.row .col{
+  width: calc(90% / 3);
+  height: 950px;
+  border: 1px solid #d0d0d3;
+}
+.row .col .icon{
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #d0d0d3;
+}
+
+/* /Business plans */
+
+/* contact enterprise */
+
+/* /contact enterprise */
+
+/* /SECTIONS */
