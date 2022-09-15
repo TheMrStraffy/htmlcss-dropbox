@@ -103,7 +103,6 @@ h1{
 
 .jumbotron .d-flex .jumbo-img{
   width: 780px;
-  height: 460px;
 }
 
 .jumbotron .container .col-1 p{
@@ -157,5 +156,12 @@ section .container .row{
 /* contact enterprise */
 
 /* /contact enterprise */
+
+/* partners */
+.row-partner-dropbox img{
+  width: 600px;
+  
+}
+/* /partners */
 
 /* /SECTIONS */
