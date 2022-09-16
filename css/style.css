@@ -200,7 +200,7 @@ section .container .row{
   padding: 10px 0;
   margin: 40px 0 ;
 }
-.option-info .btn>p,a{
+.option-info .btn>p{
   color: blue;
   text-decoration: underline;
   
@@ -318,13 +318,13 @@ section .container .row{
 
 .middle-col{
   padding: 40px;
+  overflow-y: auto;
 }
 .middle-col img{
   margin-bottom: 100px;
-}
-.middle-col img{
   width: 50%;
 }
+
 .second-section .side-col .first-row {
   width: 100%;
   height: 100%;
@@ -356,8 +356,104 @@ section .container .row{
 .first-row .bg-color-4{
   background-color: #ff1c1c;
 }
-
-
 /* /SECOND SECTION */
 
+/* Third Section */
+.third-section{
+  height: 355px;
+  background-color: #b4d0e7;
+  margin-bottom: 150px;
+}
+.third-section .row-third-section{
+
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+}
+.col-third-section h2{
+  width: 70%;
+  font-size: 2.5rem;
+
+}
+.col-third-section .btn{
+  width: 300px;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 10px 25px;
+
+}
+/* /Third Section */
+
+/* Fourth Section */
+.fourth-section{
+  margin-bottom: 150px;
+}
+.fourth-section .container h2{
+  padding-bottom: 60px;
+  border-bottom: 1px solid darkgrey;
+  font-size: 2.2rem;
+}
+.container .btn-dropdown{
+padding: 35px 0;
+border-bottom: 1px solid darkgray;
+font-weight: 800;
+}
+.btn-dropdown .fa-sharp{
+  position: relative;
+  left: 250px;
+}
+/* /Fourth Section */
+
 /* /SECTIONS */
+/* FOOTER */
+footer{
+  height: 570px;
+  padding-top: 100px;
+  background-color: black;
+  color: white;
+}
+.f-container{
+  width: 70%;
+  margin: 0 auto;
+}
+.f-top{
+  justify-content: space-between;
+  height: 340px;
+}
+.f-col{
+  width: calc(90% /5);
+}
+
+.f-col h2{
+  padding-bottom: 40px;
+}
+.f-col ul li{
+  padding: 0 0 20px 0;
+  
+}
+.f-col ul li a{
+  text-decoration: none;
+  color: white;
+}
+.dash{
+  
+  width: 120px;
+  height: 3px;
+  border-bottom: 3px solid darkgray;
+}
+
+.f-bottom{
+  height: 120px;
+  color: darkgray;
+}
+.f-bottom .language{
+  height: 100%;
+  align-items: center;
+}
+.language span{
+  padding: 0 10px;
+}
+
+
+/* /FOOTER */
