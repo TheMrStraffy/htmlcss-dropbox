@@ -9,6 +9,11 @@ body{
 }
 
 /* UTILS */
+
+.debug{
+  background-color: rgba(0, 255, 255, 0.253);
+  border: 1px solid black;
+}
 .clearfix{
   content: '';
   display: table;
@@ -147,8 +152,11 @@ h1{
 /* /JUMBOTRON */
 
 /* SECTIONS */
-section .container{
+.space-from-jumbo{
   padding-top: 150px;
+}
+section .container{
+  
   width: 55%;
   margin: 0 auto;
 }
@@ -294,5 +302,62 @@ section .container .row{
 }
 
 /* /MORE INFO */
+
+/* SECOND SECTION */
+.second-section{
+  justify-content: space-between;
+  height: 650px;
+  
+  
+}
+.second-section .col{
+  flex-direction: column;
+  width: calc(95% / 3);
+  
+}
+
+.middle-col{
+  padding: 40px;
+}
+.middle-col img{
+  margin-bottom: 100px;
+}
+.middle-col img{
+  width: 50%;
+}
+.second-section .side-col .first-row {
+  width: 100%;
+  height: 100%;
+  
+  
+}
+.second-section .side-col .first-row .box{
+  width: calc(100% /2);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.second-section .side-col .first-row .box img{
+  width: 70%;
+  text-align: center;
+  fill: #ffffff;
+}
+.first-row .bg-color-1{
+  background-color: #a2d39b;
+}
+.first-row .bg-color-2{
+  background-color: #61082b;
+}
+.first-row .bg-color-3{
+  background-color: #0093ce;
+}
+.first-row .bg-color-4{
+  background-color: #ff1c1c;
+}
+
+
+/* /SECOND SECTION */
 
 /* /SECTIONS */
