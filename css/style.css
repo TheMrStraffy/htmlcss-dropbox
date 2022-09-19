@@ -29,6 +29,7 @@ ul li{
 a{
   text-decoration: none;
 }
+
 .d-flex{
   display: flex;
 }
@@ -36,10 +37,15 @@ a{
   background-color: #0061ff;
   color: white;
   display: inline-block;
+  cursor: pointer;
 }
 /* /UTILS */
 
 /* HEADER */
+
+header{
+  box-shadow: 0px 1px 1px 1px darkgray;
+}
 
 nav{
   position: fixed;
@@ -62,20 +68,31 @@ nav .menu{
 nav .menu .logo, ul li{
   padding: 0 15px;
 }
+.menu ul{
+  align-items: center;
+  height: 80px;
+}
 .menu ul li a{
   color: black;
+  align-self: center;
+
 }
 .menu-left{
+  height: 100%;
   align-items: center;
 }
 .menu-right{
   align-items: center;
+  height: 100%;
 }
 
-/* ul li:hover{
-  border-bottom: 1px solid rgba(169, 169, 169, 0.418);
+nav .menu ul li{
   height: 100%;
-} */
+}
+nav .menu ul li:hover{
+  border-bottom: 3px solid black;
+  
+}
 
 .menu-right .btn{
   padding: 5px 10px;
@@ -137,6 +154,10 @@ h1{
 }
 .container .col-1 .arrow{
   font-size: 2.5rem;
+  cursor: pointer;
+}
+.container .col-1 .arrow a{
+  color: black;
 }
 .jumbotron .container .col-2 {
   flex-direction: row;
@@ -181,8 +202,10 @@ section .container .row{
   border-bottom: 1px solid #d0d0d3;
 }
 .option-info {
-  padding: 25px;
+  padding: 50px;
+  max-height: 100%;
 }
+
 .option-info h3,h4{
   padding-bottom: 20px;
 }
@@ -197,7 +220,7 @@ section .container .row{
 .option-info .btn{
   width: 100%;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 0px;
   margin: 40px 0 ;
 }
 .option-info .btn>p{
@@ -205,19 +228,25 @@ section .container .row{
   text-decoration: underline;
   
 }
-.option-info p{
-  padding-bottom: 85px;
-}
+
 .option-info h5{
   padding-bottom: 15px;
 }
 section .container .row{
   margin-bottom: 50px;
 }
+
+.option-info .line{
+  width: 100px;
+  height: 2px;
+  background-color: rgba(128, 128, 128, 0.384);
+  margin: 20px 0;
+}
   
 /* /Business plans */
 
 /* contact enterprise */
+
 .col-contact-enterprise{
   position: relative;
   border: 1px solid #d0d0d3;
@@ -230,15 +259,25 @@ section .container .row{
 }
 .col-contact-enterprise .enterprise-details{
   padding: 20px;
-  line-height: 35px;
+  line-height: 30px;
+}
+.col-contact-enterprise .enterprise-details h3{
+  font-size: 1.8rem;
+  padding-bottom: 5px;
+}
 
-}
 .col-contact-enterprise .btn{
-  position: absolute;
-  top: 70px;
-  right: 30px;
-  padding: 5px 40px;
+  padding: 5px 20px;
 }
+.col-ent-one{
+  flex-basis: 70%;
+  flex-direction: column;
+}
+.col-ent-two{
+  flex-basis: 30%;
+  justify-content: flex-end;
+  align-items: flex-start;
+} 
 
 
 /* /contact enterprise */
@@ -263,6 +302,13 @@ section .container .row{
   color: black;
   border: 1px solid black;
   padding: 10px;
+  transition: 0.5s;
+}
+.row-partner-dropbox .text .btn:hover{
+  background-color: darkgray;
+  color: white;
+  border: 1px solid gray;
+  transition: 0.3s;
 }
 .row-partner-dropbox img{
   float: left;
@@ -342,7 +388,7 @@ section .container .row{
 .second-section .side-col .first-row .box img{
   width: 70%;
   text-align: center;
-  fill: #ffffff;
+  filter: invert();
 }
 .first-row .bg-color-1{
   background-color: #a2d39b;
@@ -355,6 +401,9 @@ section .container .row{
 }
 .first-row .bg-color-4{
   background-color: #ff1c1c;
+}
+.col .first-row .box:active{
+  border: 15px solid rgba(255, 255, 255, 0.253);
 }
 /* /SECOND SECTION */
 
@@ -398,11 +447,24 @@ section .container .row{
 padding: 35px 0;
 border-bottom: 1px solid darkgray;
 font-weight: 800;
+cursor: pointer;
+
+}
+.dropdown-info{
+  display: none;
+  
+}
+.btn-dropdown:hover .dropdown-info{
+  display: block;
+  padding-left: 20px;
+  font-weight: 400;
+  padding-top: 20px;
+  
 }
 .btn-dropdown .fa-sharp{
-  position: relative;
-  left: 250px;
+  float: right;
 }
+
 /* /Fourth Section */
 
 /* /SECTIONS */
@@ -435,6 +497,10 @@ footer{
 .f-col ul li a{
   text-decoration: none;
   color: white;
+}
+.f-col ul li a:hover{
+  text-decoration: underline;
+  color: darkgray;
 }
 .dash{
   
