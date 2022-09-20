@@ -190,7 +190,15 @@ section .container .row{
   
 }
 
-
+.select-option{
+  padding: 20px 0;
+}
+.select-option .fa-solid{
+  color: #0093ce;
+}
+.select-option span{
+  padding-right: 20px;
+}
 .row .col{
   width: calc(90% / 3);
   height: 950px;
@@ -358,7 +366,7 @@ section .container .row{
 }
 .second-section .col{
   flex-direction: column;
-  width: calc(95% / 3);
+  width: calc(100% / 3);
   
 }
 
@@ -459,6 +467,10 @@ cursor: pointer;
   padding-left: 20px;
   font-weight: 400;
   padding-top: 20px;
+  
+}
+.btn-dropdown:hover .fa-sharp{
+  transform: rotate(180deg);
   
 }
 .btn-dropdown .fa-sharp{
